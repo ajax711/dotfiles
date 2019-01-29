@@ -1,0 +1,1 @@
+/home/ajax/.local/share/omf/themes/fishbone/fish_prompt.fish

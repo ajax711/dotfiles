@@ -1,0 +1,18 @@
+abbr install 'sudo apt-get install'
+abbr update 'sudo apt-get update'
+abbr upgrade 'sudo apt-get upgrade'
+abbr root 'cd /'
+abbr pics 'cd /home/ajax/Pictures'
+abbr music 'cd /home/ajax/Music'
+abbr decompiled 'cd /home/ajax/Desktop/Decompiled/'
+abbr sl ls
+abbr bashrc 'vim /home/ajax/.bashrc'
+abbr i3conf 'vim /home/ajax/.config/i3/config'
+abbr fishconf 'vim /home/ajax/.config/fish/config.fish'
+abbr dl 'cd /home/ajax/Downloads'
+abbr vids 'cd /home/ajax/Videos/'
+abbr cls clear
+abbr remove 'sudo apt-get remove'
+abbr search 'sudo apt-cache search'
+abbr polybarconf 'vim /home/ajax/.config/polybar/config'
+
