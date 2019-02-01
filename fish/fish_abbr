@@ -15,4 +15,4 @@ abbr cls clear
 abbr remove 'sudo apt-get remove'
 abbr search 'sudo apt-cache search'
 abbr polybarconf 'vim /home/ajax/.config/polybar/config'
-
+abbr gt gnome-terminal
