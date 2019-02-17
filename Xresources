@@ -1,1 +1,127 @@
-/home/ajax/.Xresources
+*.font:	Liberation Mono:pixelsize=12:antialias=true:autohint=true;
+*.alpha: 255
+
+/*
+
+[color 1]
+*.foreground  : #E8DFD6
+*.background  : #021B21
+*.cursorColor : #2E3340
+*.color0      : #000000
+*.color8      : #065F73
+*.color1      : #C2454E
+*.color9      : #EF5847
+*.color2      : #7CBF9E
+*.color10     : #A2D9B1
+*.color3      : #8A7A63
+*.color11     : #BEB090
+*.color4      : #7DC1CF
+*.color12     : #61778D
+*.color5      : #FF5879
+*.color13     : #FF99A1
+*.color6      : #44B5B1
+*.color14     : #9ED9D8
+*.color7      : #F2F1B9
+*.color15     : #F6F6C9
+*/
+
+/*
+[color 2]
+! vim: set filetype=xdefaults :
+*foreground: #D7D0C7
+*background: #151515
+
+!black
+! *color0:     #AF875F
+! *color8:     #AF875F
+*color0:     #101010
+*color8:     #404040
+!red
+*color1:     #E84F4F
+*color9:     #D23D3D
+!green
+*color2:     #B8D68C
+*color10:    #A0CF5D
+!yellow
+*color3:     #E1AA5D
+*color11:    #F39D21
+!blue
+*color4:     #7DC1CF
+*color12:    #4E9FB1
+!magenta
+*color5:     #9B64FB
+*color13:    #8542FF
+!cyan
+*color6:     #6D878D
+*color14:    #42717B
+!white
+*color7:     #dddddd
+*color15:    #dddddd
+*/
+
+
+[color 3]
+
+*.color0:#13151d
+*.color1:#DA5A69
+*.color2:#F7936B
+*.color3:#656687
+*.color4:#967387
+*.color5:#DD7484
+*.color6:#728797
+*.color7:#e4c9c2
+*.color8:#9f8c87
+*.color9:#DA5A69
+*.color10:#F7936B
+*.color11:#656687
+*.color12:#967387
+*.color13:#DD7484
+*.color14:#728797
+*.color15:#e4c9c2
+
+
+/*
+ 
+[color 4]
+
+!! Purple     #AE81FF
+!! Pink-red   #F92672
+!! Blue       #66D9EF
+!! Green      #A6E22E
+!! Orange     #FD971F
+!! White      #FFFFFF
+
+!! Background
+*.color0: #101010
+!! Brackets
+*.color1: #E10020
+!! @
+*.color2: #E10020
+!! User Name
+*.color3: #FFFFFF
+!! Focused Window Border
+*.color4: #666666
+!! Toggle direction color
+*.color5: #E10020
+!! Certain dotfiles and numerical values in SC-IM
+*.color6: #E10020
+!! $ and i3 block text SC-IM focsued and col/row text
+*.color7: #FFFFFF
+!! htop process location
+*.color8: #E10020
+!! unknown
+*.color9: #E10020
+!! Program Directories and Name in Ranger
+*.color10: #E10020
+!! Device files /dev
+*.color11: #A6E22E
+!! All Directories in Ranger
+*.color12: #E10020
+!! unknown
+*.color13: #E10020
+!! i3blocks separators
+*.color14: #666666
+!! Main text
+*.color15: #FFFFFF
+
+*/
