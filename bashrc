@@ -1,7 +1,7 @@
 #~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-
+set -o vi
 #pywal
 #export PATH="${PATH}:${HOME}/.local/bin/"
 
@@ -124,7 +124,7 @@ export BASH_IT="/home/ajax/.bash_it"
 # Lock and Load a custom theme file.
 # Leave empty to disable theming.
 # location /.bash_it/themes/
-export BASH_IT_THEME='simple'
+export BASH_IT_THEME='wanelo'
 
 # (Advanced): Change this to the name of your remote repo if you
 # cloned bash-it with a remote other than origin such as `bash-it`.
@@ -172,3 +172,11 @@ export SCM_CHECK=true
 
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
+
+
+
+
+
+
+
+

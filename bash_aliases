@@ -14,6 +14,7 @@ alias code='cd ~/Desktop/Code'
 alias fishconf='vim ~/.config/fish/config.fish'
 alias wallpaper="cd ~/Pictures/wallpapers-me"
 alias books="cd ~/Desktop/Books"
+alias sb="source ~/.bashrc"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
