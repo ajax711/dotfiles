@@ -1,0 +1,24 @@
+abbr install 'sudo apt-get install'
+abbr update 'sudo apt-get update'
+abbr upgrade 'sudo apt-get upgrade'
+abbr root 'cd /'
+abbr pics 'cd /home/ajax/Pictures'
+abbr music 'cd /home/ajax/Music'
+abbr decompiled 'cd /home/ajax/Decompiled/'
+abbr sl ls
+abbr bashrc 'nvim /home/ajax/.bashrc'
+abbr i3conf 'nvim /home/ajax/.config/i3/config'
+abbr fishconf 'nvim /home/ajax/.config/fish/config.fish'
+abbr dl 'cd /home/ajax/Downloads'
+abbr vids 'cd /home/ajax/Videos/'
+abbr cls clear
+abbr remove 'sudo apt-get remove'
+abbr search 'sudo apt-cache search'
+abbr polybarconf 'vim /home/ajax/.config/polybar/config'
+abbr gt gnome-terminal
+abbr code 'cd ~/Code'
+abbr docs 'cd ~/Documents'
+abbr vim nvim
+abbr 0x0 'curl -Ffile=@file_name http://0x0.st'
+abbr abbr polkit /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+
