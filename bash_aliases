@@ -1,22 +1,24 @@
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+as install='sudo apt-get install'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
 alias root='cd /'
-alias dl='cd ~/Downloads'
-alias pics='cd ~/Pictures'
-alias music='cd ~/Music'
-alias decompiled='cd ~/Desktop/Decompiled'
-alias sl='ls'
-alias update='sudo apt-get update && sudo apt-get upgrade'
-alias bashrc='vim ~/.bashrc'
-alias i3conf='vim ~/.config/i3/config'
-alias code='cd ~/Desktop/Code'
-alias fishconf='vim ~/.config/fish/config.fish'
-alias wallpaper="cd ~/Pictures/wallpapers-me"
-alias books="cd ~/Desktop/Books"
-alias sb="source ~/.bashrc"
-alias install="sudo apt-get install"
+alias pics='cd /home/ajax/Pictures'
+alias music='cd /home/ajax/Music'
+alias decompiled='cd /home/ajax/Decompiled/'
+alias sl=ls
+alias bashrc='nvim /home/ajax/.bashrc'
+alias i3conf='nvim /home/ajax/.config/i3/config' &&
+alias fishconf='nvim /home/ajax/.config/fish/config.fish' &&
+alias dl='cd /home/ajax/Downloads' &&
+alias vids='cd /home/ajax/Videos/' &&
+alias cls=clear &&
+alias remove='sudo apt-get remove' &&
+alias search='sudo apt-cache search' &&
+alias polybarconf='vim /home/ajax/.config/polybar/config' &&
+alias gt=gnome-terminal &&
+alias code='cd ~/Code' &&
+alias docs='cd ~/Documents' &&
+alias vim=nvim &&
+alias 0x0='curl -Ffile=@file_name http://0x0.st' &&
+alias dns='sudo nvim /etc/resolv.conf'
 
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
