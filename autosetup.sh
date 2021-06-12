@@ -2,6 +2,7 @@
 cd ~ 
 
 sudo apt-get update 
+sudo apt-get upgrade 
 
 wget -c http://0x0.st/-AGo.xml -O xfce4-keyboard-shortcuts.xml
  
