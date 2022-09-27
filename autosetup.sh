@@ -58,8 +58,9 @@ echo include ./theme.conf >> kitty.conf
 git config --global user.email singhshobhit2000@gmail.com
 git config --global user.name bigass
 
-
+rm ~/.bash_aliases
 cp dotfiles/bash_aliases ~/
+cd ~
 mv bash_aliases .bash_aliases 
 source .bash_aliases
 
