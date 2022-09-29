@@ -16,19 +16,25 @@ wget https://zoom.us/client/latest/zoom_amd64.deb
 #Download Discord 
 wget "https://discord.com/api/download?platform=linux&format=deb"
 
-#Download Stremio 
-wget  0x0.st/-A0J.deb //stremio -O stremio.deb
-
 mv download\?platform\=linux\&format\=deb discord.deb
-
-#Install all that (It might break)
-sudo dpkg -i zoom_amd64.deb  stremio.deb discord.deb 
 
 #Fix it 
 sudo apt-get install -f 
 
-#Install again
-sudo dpkg -i zoom_amd64.deb  stremio.deb discord.deb
+#Install 
+sudo dpkg -i zoom_amd64.deb discord.deb
+
+#Stremio
+wget nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1-1ubuntu2.1~18.04.20_amd64.deb
+sudo dpkg -i libssl1.1_1.1.1-1ubuntu2.1~18.04.20_amd64.deb 
+
+wget http://archive.ubuntu.com/ubuntu/pool/multiverse/f/fdk-aac/libfdk-aac1_0.1.6-1_amd64.deb
+sudo dpkg -i libfdk-aac1_0.1.6-1_amd64.deb
+
+wget https://dl.strem.io/shell-linux/v4.4.116/stremio_4.4.116-1_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/multiverse/f/fdk-aac/libfdk-aac1_0.1.5-1_amd64.deb
+sudo dpkg -i libfdk-aac1_0.1.5-1_amd64.deb
+sudo apt install ./stremio_4.4.116-1_amd64.deb
 
 # Install Arduino 
 #wget http://0x0.st/-A0v.xz //arduino 
@@ -54,12 +60,12 @@ ln -s ./kitty-themes/themes/ayu.conf ~/.config/kitty/theme.conf
 touch kitty.conf
 echo include ./theme.conf >> kitty.conf
 
-cd ~
-touch ssh_setup
-echo "ssh_github" >> ssh_setup
-echo "z" >> ssh_setup
-echo "z" >> ssh_setup
-cat ssh_setup |  ssh-keygen -t ed25519 -C "ajx@disroot.org"
+#cd ~
+#touch ssh_setup
+#echo "ssh_github" >> ssh_setup
+#echo "z" >> ssh_setup
+#echo "z" >> ssh_setup
+#cat ssh_setup |  ssh-keygen -t ed25519 -C "ajx@disroot.org"
 
 git config --global user.email ajx@disroot.org
 git config --global user.name bigass
