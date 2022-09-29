@@ -54,8 +54,14 @@ ln -s ./kitty-themes/themes/ayu.conf ~/.config/kitty/theme.conf
 touch kitty.conf
 echo include ./theme.conf >> kitty.conf
 
+cd ~
+touch ssh_setup
+echo "ssh_github" >> ssh_setup
+echo "z" >> ssh_setup
+echo "z" >> ssh_setup
+cat ssh_setup |  ssh-keygen -t ed25519 -C "ajx@disroot.org"
 
-git config --global user.email singhshobhit2000@gmail.com
+git config --global user.email ajx@disroot.org
 git config --global user.name bigass
 
 rm ~/.bash_aliases
