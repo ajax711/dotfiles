@@ -60,12 +60,14 @@ ln -s ./kitty-themes/themes/ayu.conf ~/.config/kitty/theme.conf
 touch kitty.conf
 echo include ./theme.conf >> kitty.conf
 
-#cd ~
-#touch ssh_setup
-#echo "ssh_github" >> ssh_setup
-#echo "z" >> ssh_setup
-#echo "z" >> ssh_setup
-#cat ssh_setup |  ssh-keygen -t ed25519 -C "ajx@disroot.org"
+#setup guthub ssh
+
+cd ~
+touch ssh_setup
+echo "ssh_github" >> ssh_setup
+echo "z" >> ssh_setup
+echo "z" >> ssh_setup
+cat ssh_setup |  ssh-keygen -t ed25519 -C "ajx@disroot.org"
 
 git config --global user.email ajx@disroot.org
 git config --global user.name bigass
@@ -75,4 +77,21 @@ cp dotfiles/bash_aliases ~/
 cd ~
 mv bash_aliases .bash_aliases 
 source .bash_aliases
+
+#setup hotspot
+cd ~
+sudo apt install hostapd
+git clone https://github.com/oblique/create_ap
+cd create_ap
+make install
+
+#run hotspot by sudo create_ap wlp4s0 wlp4s0 <SSID> <Password>
+
+#Setup protonvpn 
+cd ~
+wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3_all.deb
+dpkg -i protonvpn-stable-release_1.0.3_all.deb
+sudo apt update 
+sudo apt install protonvpn
+
 
