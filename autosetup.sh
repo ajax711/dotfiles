@@ -94,4 +94,20 @@ dpkg -i protonvpn-stable-release_1.0.3_all.deb
 sudo apt update 
 sudo apt install protonvpn
 
+#setup cinnamon
+mkdir ~/.fonts
+cp ~/dotfiles/fonts ~/.fonts
+
+mkdir ~/.themes
+cp ~/dotfiles/themes ~/.themes
+
+cp Catppuccin-Mocha-MOD ~/.local/share
+
+rsync -av cinnamon-applet-config/.cinnamon/ ~/
+rsync -av ~/dotfiles/cinnamon-applet-config/.local/ ~/
+dconf load /org/cinnamon/ < cinnamon-catppcn.conf
+
+#After that just go to Windows and put buttons on right
+#Click on workspace > configure > Simple buttons 
+#Edit panel and put grouped windows / window list 
 
