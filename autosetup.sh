@@ -36,6 +36,20 @@ wget http://archive.ubuntu.com/ubuntu/pool/multiverse/f/fdk-aac/libfdk-aac1_0.1.
 sudo dpkg -i libfdk-aac1_0.1.5-1_amd64.deb
 sudo apt install ./stremio_4.4.116-1_amd64.deb
 
+sudo apt remove --purge libreoffice* 
+sudo apt remove --purge bansee celluloid 
+
+#Code 
+sudo apt-get install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
+sudo apt install apt-transport-https
+sudo apt update
+sudo apt install code 
+
+
 # Install Arduino 
 #wget http://0x0.st/-A0v.xz //arduino 
 #tar -xvf -A0v.xz --directory ~/
